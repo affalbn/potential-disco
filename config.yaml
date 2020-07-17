@@ -1,0 +1,21 @@
+# File config.yaml
+
+scrap_config:
+  - scrap_interval: '5' # In seconds
+
+db_config:
+  - db_plesk_name: 'psa'
+  - db_app_name: 'db_app'
+  - db_app_user: 'db_user'
+  - db_app_password: 'password'
+  - db_app_host: 'localhost'
+
+# To get token, run `plesk bin secret_key -c` . Put host and token in order.
+api_access:
+  - hosts:
+      - 'ip_address_1'
+      - 'ip_address_2'
+
+  - api_tokens:
+      - 'token_1'
+      - 'token_2'
