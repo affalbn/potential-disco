@@ -141,8 +141,11 @@ class checkDomain:
                 self.add_domain()
                 self.remove_domain()
                 time.sleep(self.scrap_interval)
+            except requests.ConnectionError as CError:
+                print(CError)
+                break
             except:
-                print("Something error. Call Afif for support.")
+                print("You shall not pass! Something error.")
                 break
 
 if __name__ == '__main__':
